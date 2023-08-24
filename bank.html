@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-28 mb-22">Taka Check <span
+                class="font-semibold text-lime-400">Koooori!</span>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-28">
+            <div class="grid grid-cols-3 gap-4 mx-auto w-9/12 ">
+                <div class="bg-green-600 p-8 text-white  rounded-lg ">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h4 class="text-5xl">$<span id="deposit-total">00</span></h4>
+                </div>
+                <div class="bg-red-700 p-8 text-white  rounded-lg ">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h4 class="text-5xl">$<span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-indigo-950 p-8 text-white  rounded-lg ">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h4 class="text-5xl">$<span id="balance-total">1200</span></h4>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 mx-auto w-9/12">
+                <div class="bg-green-600 p-8  rounded-lg ">
+                    <h4 class="text-4xl text-white">Place Deposit</h4>
+                    <input
+                        class="block mt-6 mb-6 px-3 w-8/12 h-10 ml-10 rounded-md placeholder:p-2 placeholder:text-grey "
+                        type="text" name="" id="Deposit-user" placeholder="$ You want to Deposit">
+                    <button
+                        class="bg-emerald-800 ml-10 w-1/4 h-10 text-neutral-50 rounded-md hover:bg-white hover:text-lime-600"
+                        id="depositbtn">Deposit</button>
+                </div>
+                <div class="bg-purple-800 p-8  rounded-lg ">
+                    <h4 class="text-4xl text-white">Place Withdraw</h4>
+                    <input
+                        class="block mt-6 mb-6 px-3 w-8/12 h-10 ml-10 rounded-md placeholder:p-2 placeholder:text-grey "
+                        type="text" name="" id="Withdraw-user" placeholder="$ You want to Deposit">
+                    <button
+                        class="bg-blue-950 ml-10 w-1/4 h-10 text-neutral-50 rounded-md hover:bg-white hover:text-lime-600"
+                        id="withdrawbtn">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
